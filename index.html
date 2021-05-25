@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12  col-md-10 offset-md-1">
+          <div class="card">
+            <div class="card-header text-center">
+              <h3>Kridet kalkulator</h3>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <label for="miqdori">Kredit summa</label>
+                  <input type="number" id="miqdoriv" class="form-control" />
+
+                  <label for="foiz">Yillik foiz</label>
+                  <select id="foiz" class="form-control">
+                    <option value="14">14%</option>
+                    <option value="15">15%</option>
+                    <option value="16">16%</option>
+                    <option value="17">17%</option>
+                    <option value="18">18%</option>
+                    <option value="19">19%</option>
+                    <option value="20">20%</option>
+                    <option value="21">21%</option>
+                    <option value="22">22%</option>
+                    <option value="23">23%</option>
+                    <option value="24">24%</option>
+                    <option value="25">25%</option>
+                    <option value="26">26%</option>
+                    <option value="27">27%</option>
+                    <option value="28">28%</option>
+                    <option value="29">29%</option>
+                    <option value="30">30%</option>
+                  </select>
+
+                  <label for="kalendaryili">Kalendar yili</label>
+                  <select id="kalendaryili" class="form-control">
+                    <option value="2021">2021 - yil</option>
+                    <option value="2022">2022 - yil</option>
+                    <option value="2023">2023 - yil</option>
+                    <option value="2024">2024 - yil</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="boshfoiz">Boshlang'ich to'lov foizi</label>
+                  <select id="boshfoiz" class="form-control">
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                    <option value="25">25%</option>
+                  </select>
+
+                  <label for="dedline">Yillik muddat</label>
+                  <select id="dedline" class="form-control">
+                    <option value="1">1 yil</option>
+                    <option value="2">2 yil</option>
+                    <option value="5">5 yil</option>
+                    <option value="10">10 yil</option>
+                    <option value="15">15 yil</option>
+                    <option value="20">20 yil</option>
+                  </select>
+
+                  <label for="kalendaroyi">Kalendar oyi</label>
+                  <select id="kalendaroyi" class="form-control">
+                    <option value="0">Yanvar</option>
+                    <option value="1">Fevral</option>
+                    <option value="2">Mart</option>
+                    <option value="3">Aprel</option>
+                    <option value="4">May</option>
+                    <option value="5">Iyun</option>
+                    <option value="6">Iyul</option>
+                    <option value="7">Avgust</option>
+                    <option value="8">Sentabr</option>
+                    <option value="9">Oktabr</option>
+                    <option value="10">Noyabr</option>
+                    <option value="11">Dekabr</option>
+                  </select>
+                </div>
+                
+                <button
+                  type="button"
+                  class="btn ml-auto mt-4 btn-success"
+                  onclick="hisoblash()"
+                >
+                  Hisblash
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12  mt-3">
+          <table class="table table-hover  table-responsive ">
+            <thead id="theader">
+             
+            </thead>
+            <tbody id="result"></tbody>
+            <tfoot id="jami"></tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

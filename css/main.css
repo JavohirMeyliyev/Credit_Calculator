@@ -1,0 +1,24 @@
+table{
+    background-color: #efeffe;
+}
+thead{
+   font-size: 20px;
+   font-weight:700;
+}
+tfoot{
+    font-size: 18px;
+   font-weight:700;
+}
+label{
+    font-weight: 700;
+    margin-top: 20px;
+
+}
+table{
+    padding-left: 70px;
+}
+@media (max-width:1200px){
+    table{
+        padding-left:0px
+    }
+}
